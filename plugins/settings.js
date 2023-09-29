@@ -1,10 +1,10 @@
 const transformData = (list) => {
-    const result = {};
+    const result = {}
     for (let i = 0; i < list.length; i++) {
-        const item = list[i];
-        result[item.name] = item.value;
+        const item = list[i]
+        result[item.name] = item.value
     }
-    return result;
+    return result
 }
 
 export default defineNuxtPlugin((nuxtApp) => {
@@ -12,7 +12,7 @@ export default defineNuxtPlugin((nuxtApp) => {
         let settings = {}
 
         const { data, error } = await useAuthFetch('/api/chat/settings/', {
-            method: 'GET',
+            method: 'GET'
         })
 
         if (!error.value) {

@@ -16,7 +16,6 @@ bash <(curl -Ls https://raw.githubusercontent.com/WongSaang/chatgpt-ui/main/depl
 
 ### Docker Compose
 
-
 #### Prepare docker-compose.yml
 
 The project provides a sample `docker-compose.yml`. If you want to customize the configuration, please refer to the [configuration reference](/en/guide/configuration) section.
@@ -97,16 +96,16 @@ docker-compose up --pull always -d
 
 This command is used to start the services specified in the Docker Compose configuration. The specific meanings of the parameters are as follows:
 
-- `up`: start the services specified in the Docker Compose configuration.
-- `--pull always`: before starting the service each time, the latest version of the image will be pulled from the Docker image repository. This ensures that the image used is always up to date.
-- `-d`: run the service in the background. If this parameter is not added, the service will run in the current terminal window until the user manually stops it.
+-   `up`: start the services specified in the Docker Compose configuration.
+-   `--pull always`: before starting the service each time, the latest version of the image will be pulled from the Docker image repository. This ensures that the image used is always up to date.
+-   `-d`: run the service in the background. If this parameter is not added, the service will run in the current terminal window until the user manually stops it.
 
 ## After Deployment
 
 Access the management panel at `http(s)://your.domain:9000/admin` or `http(s)://123.123.123.123:9000/admin` using the default superuser account:
 
-- username: **admin**
-- password: **password**
+-   username: **admin**
+-   password: **password**
 
 ~~Before starting a chat, you need to add an OpenAI API key. In the management panel, in the "Settings" section, there is a record named `openai_api_key`. Set the value to your API key.~~
 

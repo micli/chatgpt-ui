@@ -7,6 +7,7 @@
 项目地址：[https://github.com/WongSaang/chatgpt-ui](https://github.com/WongSaang/chatgpt-ui)
 
 ### 环境准备
+
 安装最新稳定版 node.js，如果需要打包成 docker 镜像，还需要安装 docker。
 
 ### 安装依赖
@@ -33,7 +34,6 @@ yarn build
 docker build -t image-name:latest .
 ```
 
-
 ## 后端
 
 所需技能：[Python](https://www.python.org/)、[Django](https://djangoproject.com/)
@@ -41,6 +41,7 @@ docker build -t image-name:latest .
 项目地址：[https://github.com/WongSaang/chatgpt-ui-server](https://github.com/WongSaang/chatgpt-ui-server)
 
 ### 环境准备
+
 安装Python、pip/pipenv，如果需要打包成 docker 镜像，还需要安装 docker。
 
 ### 安装依赖

@@ -3,12 +3,10 @@ export default defineEventHandler(async (event) => {
     await new Promise((resolve, reject) => {
         createProxyMiddleware({
             target: process.env.SERVER_DOMAIN,
-            pathFilter: '/api',
+            pathFilter: '/api'
         })(event.node.req, event.node.res, (err) => {
-            if (err)
-                reject(err)
-            else
-                resolve(true)
+            if (err) reject(err)
+            else resolve(true)
         })
     })
 })

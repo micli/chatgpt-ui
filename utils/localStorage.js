@@ -1,4 +1,3 @@
-
 const get = (key) => {
     if (process.server) return
     let val = localStorage.getItem(key)
